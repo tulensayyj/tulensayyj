@@ -5,15 +5,20 @@
   
 
   
-  <title>Hexo</title>
+  <title>DiaryWithMusic | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="项目简述1.功能描述：在对SQLite的基础应用基础上做的日记，可以添加内容和删除内容。用Thread启动一个子线程，在子线程中开启服务，开始播放歌曲，同时可以拖动seekbar改变播放的位置。 2.实现细节： 第一个FloatingActionButton打开一个新的activity实现日记的添加。 ListView实现了日记列表的显示功能。 SQLite实现了日记数据的储存功能。 seekba">
+<meta name="keywords" content="多线程,Android,Music">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DiaryWithMusic">
+<meta property="og:url" content="http://yoursite.com/2018/04/18/DiaryWithMusic/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="项目简述1.功能描述：在对SQLite的基础应用基础上做的日记，可以添加内容和删除内容。用Thread启动一个子线程，在子线程中开启服务，开始播放歌曲，同时可以拖动seekbar改变播放的位置。 2.实现细节： 第一个FloatingActionButton打开一个新的activity实现日记的添加。 ListView实现了日记列表的显示功能。 SQLite实现了日记数据的储存功能。 seekba">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-18T13:02:31.726Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="DiaryWithMusic">
+<meta name="twitter:description" content="项目简述1.功能描述：在对SQLite的基础应用基础上做的日记，可以添加内容和删除内容。用Thread启动一个子线程，在子线程中开启服务，开始播放歌曲，同时可以拖动seekbar改变播放的位置。 2.实现细节： 第一个FloatingActionButton打开一个新的activity实现日记的添加。 ListView实现了日记列表的显示功能。 SQLite实现了日记数据的储存功能。 seekba">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-DiaryWithMusic" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-DiaryWithMusic" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/18/DiaryWithMusic/" class="article-date">
   <time datetime="2018-04-18T12:40:03.000Z" itemprop="datePublished">2018-04-18</time>
@@ -75,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/18/DiaryWithMusic/">DiaryWithMusic</a>
+    <h1 class="article-title" itemprop="name">
+      DiaryWithMusic
     </h1>
   
 
@@ -113,67 +116,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-RemindAlarm" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/04/18/RemindAlarm/" class="article-date">
-  <time datetime="2018-04-18T11:03:33.000Z" itemprop="datePublished">2018-04-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/18/RemindAlarm/">RemindAlarm</a>
-    </h1>
+    <a href="/2018/04/18/RemindAlarm/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">RemindAlarm</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="项目简述"><a href="#项目简述" class="headerlink" title="项目简述"></a>项目简述</h2><h3 id="1-功能描述："><a href="#1-功能描述：" class="headerlink" title="1.功能描述："></a>1.功能描述：</h3><p>基于AlaramManager和Service/boardcast实现的小闹钟程序。点击下方的闹钟按钮就可以添加闹钟，长按列表项可以删除闹钟。</p>
-<h3 id="2-实现细节："><a href="#2-实现细节：" class="headerlink" title="2.实现细节："></a>2.实现细节：</h3><ul>
-<li>AlaramManager分别配合Service/boardcast两种方法实现了闹钟响铃功能。</li>
-<li>FloatingActionButton和TimePicker实现闹钟设置。</li>
-<li>RecyclerView实现了闹钟列表的显示。</li>
-<li>SQLite实现了闹钟数据的储存功能。</li>
-</ul>
-<h3 id="3-不足之处："><a href="#3-不足之处：" class="headerlink" title="3.不足之处："></a>3.不足之处：</h3><ul>
-<li>两种方式：Service和boardcast都没有能实现真正意义上的保活，超过一定时长的闹钟会失效，这个暂时是解决不了了。</li>
-<li>功能和界面都比较简陋，有很大的优化空间。</li>
-</ul>
-<h2 id="项目感想"><a href="#项目感想" class="headerlink" title="项目感想"></a>项目感想</h2><ul>
-<li>Android的机型非常的多，很多厂家都对AlaramManager在手机上的实现做了修改，如果要使用AlaramManager来实现某种功能，那么可能需要针对特定的机型，做特定处理。</li>
-<li>RecyclerView的确是实现了完全的解耦，相比于ListView，有更大的灵活性和优化空间。</li>
-</ul>
-<h2 id="项目链接"><a href="#项目链接" class="headerlink" title="项目链接"></a>项目链接</h2><ul>
-<li>github: <a href="https://github.com/tulensayyj/RemindAlarm" target="_blank" rel="noopener">https://github.com/tulensayyj/RemindAlarm</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/18/RemindAlarm/" data-id="cjg53xyg50001rkve0xxdktjr" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小型闹钟/">小型闹钟</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
